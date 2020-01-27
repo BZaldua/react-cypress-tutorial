@@ -1,9 +1,13 @@
 stages:
     - build
     
-image: ubuntu
+image: node:6.11.2
 
 build:
     stage: build
-    before_script:
-        - echo "Hello"
+    cache:
+        untracked: true
+    only:
+        - master
+    script:
+        - node -v
