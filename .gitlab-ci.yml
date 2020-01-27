@@ -3,7 +3,12 @@ stages:
 
 build:
     stage: build
+    before_script:
+        - npm install
+    cache:
+        untracked: true
     only:
         - master
     script:
-        - whoami
+        - echo "Dependencies installed"
+        - docker run --detached hello-world
