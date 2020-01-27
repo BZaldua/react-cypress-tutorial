@@ -3,5 +3,7 @@ stages:
 
 build:
     stage: build
+    only:
+        - master
     script:
         - whoami
