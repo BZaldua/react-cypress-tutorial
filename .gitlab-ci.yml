@@ -3,5 +3,12 @@ stages:
 
 build:
     stage: build
+    image: node:6.11.2
+    before_script:
+        - npm install
+    cache:
+        untracked: true
+    only:
+        - master
     script:
-        - echo "Building"
+        - npm -v
