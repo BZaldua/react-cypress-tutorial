@@ -1,13 +1,7 @@
 stages:
     - build
-    
-image: node:6.11.2
 
 build:
     stage: build
-    cache:
-        untracked: true
-    only:
-        - master
     script:
-        - node -v
+        - echo "Building"
