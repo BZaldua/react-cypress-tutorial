@@ -5,5 +5,5 @@ image: ubuntu
 
 build:
     stage: build
-    script:
+    before_script:
         - echo "Hello"
