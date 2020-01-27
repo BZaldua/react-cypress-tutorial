@@ -1,0 +1,15 @@
+stages:
+    - build
+    
+image: node:6.11.2
+
+construction:
+    stage: build
+    before_script:
+        - npm_install
+    cache:
+        untracked: true
+    only:
+        - master
+    script:
+        - node -v
