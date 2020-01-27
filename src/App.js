@@ -1,24 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
+
+// import Greeting from "./greeting/Greeting";
+// import Props from "./props/Props";
+// import Counter from "./counter/Counter";
+
+
+
 import './App.css';
+import {SimpleForm, EssayForm} from './forms/Forms';
+import {ListLoop, TableLoop} from './loops/Loops';
+import {GetCall} from './http/Rest';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Greeting />
+      <Props name=", hasta lue"/>
+
+      <div className="App-intro">
+        <Counter />
+      </div> */}
+
+      <h3>Simple form component</h3>
+      <SimpleForm />
+      <br/><br/>
+      <hr/>
+      <h3>Essay form component</h3>
+      <br/><br/>
+      <EssayForm />
+      <br/><br/>
+      <hr/>
+      <h3>List creation with for Loop</h3>
+      <ListLoop/>
+      <br/><br/>
+      <hr/>
+      <h3>Table creation with for Loop</h3>
+      <TableLoop/>
+      <br/><br/>
+      <hr/>
+      <h3>REST call to an API</h3>   
+      <GetCall/>
+
     </div>
   );
 }
