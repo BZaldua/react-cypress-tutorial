@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+This is a project developed with ReactJS and E2E tested with Cypress which its main aim is to lear those two technologies.
+
+
 
 ## Available Scripts
 
@@ -37,32 +40,16 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run cypress:open`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In order to do an E2E testing with an UI you can open Cypress interface and watch the execution of the developed tests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Make sure an instance of the web is up and running before launching tests.
 
-### Code Splitting
+### `npm run cypress:run`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+In case we want to test the app but using the CLI and not Cypress UI, we can just `run` them.
 
-### Analyzing the Bundle Size
+We will get the execution time and the succedded/failed test report all from the command line. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Make sure an instance of the web is up and running before launching tests.
